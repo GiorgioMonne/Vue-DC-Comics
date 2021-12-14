@@ -47,10 +47,10 @@ export default {
 
             .logo{
                 display: flex;
-                height: 100%;
+                align-items: center;
 
                 img{
-                    height: 80px;
+                    height: 70px;
                     
                 }
             }
