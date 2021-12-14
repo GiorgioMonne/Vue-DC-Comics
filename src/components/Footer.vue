@@ -91,16 +91,19 @@
                     </button>
                 </div>
 
-                <h2>FOLLOW US</h2>
-                <ul>
-                    <li>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                    </li>
-                </ul>
+                <div class="destra">
+                    <h2>FOLLOW US</h2>
+                    <ul>
+                        <li>
+                            <img src="../assets/img/footer-facebook.png" alt="">
+                            <img src="../assets/img/footer-twitter.png" alt="">
+                            <img src="../assets/img/footer-youtube.png" alt="">
+                            <img src="../assets/img/footer-pinterest.png" alt="">
+                            <img src="../assets/img/footer-periscope.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>
@@ -184,6 +187,9 @@ export default {
         .container-tre{
             background-color: rgb(73, 73, 73);
             .sotto{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             
                 .bottom{
 
@@ -195,6 +201,31 @@ export default {
                         border: 1px solid rgb(63, 63, 233);
                         margin: 20px auto;
                         font-size: 12px;
+                    }
+                }
+
+                .destra{
+                    display: flex;
+
+                    h2{
+                        display: flex;
+                        margin: auto 10px;
+                    }
+
+                    ul{
+                        display: flex;
+
+                        li{
+                            margin: auto 10px;
+
+                            img{
+                                height: 30px;
+                                width: 30px;
+                                margin: auto 5px;
+                                vertical-align: middle;
+                                border-radius: 50%;
+                            } 
+                        }
                     }
                 }
             }
