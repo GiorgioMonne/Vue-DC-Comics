@@ -1,7 +1,7 @@
 <template>
   <main>
-      <div class="content">
-
+      <div class="container">
+          <h2>-->Content goes Here --</h2>
       </div>
   </main>
 </template>
@@ -12,6 +12,17 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+    main{
+        background-color: black;
 
+        .container{
+            padding: 10px 10px;
+
+            h2{
+            padding: 10px 5px;
+            margin: 10px 10px;
+            }
+        }
+    }
 </style>

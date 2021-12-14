@@ -1,0 +1,52 @@
+@import './partials/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+
+/*_________________________
+
+        RESET
+__________________________*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*____________________________
+
+        CONTAINERS
+_____________________________*/
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container-due{
+    margin: 0 auto;
+}
+
+.container-tre{
+    margin: 0 auto;
+}
+
+/*____________________________
+
+        BODY
+_____________________________*/
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*____________________________
+
+        TYPOGRAFY
+_____________________________*/
+
+h2{
+    color: $mainColor;
+    // margin: 10px 0;
+}
+
