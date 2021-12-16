@@ -176,9 +176,13 @@ export default {
                             a{
                                 text-decoration: none;
                                 font-size: 12px;
-                                color: white;
-                                opacity: 0.3;
+                                color: grey;
+                                
 
+                            }
+
+                            a:hover{
+                                color: white;
                             }
                         }  
                     }
