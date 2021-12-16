@@ -174,11 +174,13 @@ export default {
                             }
 
                             a{
-                                color: grey;
                                 text-decoration: none;
                                 font-size: 12px;
+                                color: white;
+                                opacity: 0.3;
+
                             }
-                        }
+                        }  
                     }
                 }
             }
@@ -214,6 +216,7 @@ export default {
 
                     ul{
                         display: flex;
+                        list-style: none;
 
                         li{
                             margin: auto 10px;
@@ -224,6 +227,7 @@ export default {
                                 margin: auto 5px;
                                 vertical-align: middle;
                                 border-radius: 50%;
+                                cursor: pointer;
                             } 
                         }
                     }

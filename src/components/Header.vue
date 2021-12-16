@@ -8,18 +8,7 @@
 
         <nav>
             <ul>
-                <li>
-                    <a href="#">Characters</a>
-                    <a href="#">Comix</a>
-                    <a href="#">Movies</a>
-                    <a href="#">Tv</a>
-                    <a href="#">Games</a>
-                    <a href="#">Collections</a>
-                    <a href="#">Videos</a>
-                    <a href="#">Fans</a>
-                    <a href="#">News</a>
-                    <a href="#">Shop</a>
-                </li>
+                <li v-for="(link, index) in links" :key="index"><a :class="{active : isActive}"  href="link.url">{{link.text}}</a></li>
             </ul>
         </nav>
 
@@ -32,14 +21,72 @@
 
 <script>
 export default {
-    name:'Header'
+    name:'Header',
+    data(){
+
+        return{ 
+
+            links: [
+                {
+                    text: 'CHARACTERS',
+                    url: '#',
+                    current: 'false',
+                },
+                {
+                    text: 'COMICS',
+                    url: '#',
+                    current: 'true',
+                },
+                {
+                    text: 'MOVIES',
+                    url: '#',
+                    current: 'false',
+                },
+                {
+                    text: 'TV',
+                    url: '#',
+                    current: 'false',
+                },
+                {
+                    text: 'GAMES',
+                    url: '#',
+                    current: 'false',
+                },
+                {
+                    text: 'COLLECTIBLES',
+                    url: '#',
+                    current: 'false',
+                },
+                {
+                    text: 'VIDEOS',
+                    url: '#',
+                    current: 'false',
+                },
+                {
+                    text: 'FANS',
+                    url: '#',
+                    current: 'false',
+                },
+                {
+                    text: 'NEWS',
+                    url: '#',
+                    current: 'false',
+                },
+                {
+                    text: 'SHOP',
+                    url: '#',
+                    current: 'false',
+                },
+            ]            
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
 
     header{
-        // display: flex;       
+        height: 120px;      
 
         .container{
             display: flex;
@@ -69,18 +116,16 @@ export default {
                         color: black;
                         padding: 30px 10px;
                         margin: 0 5px;
-                        line-height: 60px;
+                        line-height: 57px;
+                        font-size: 12px;
 
                         &.active , &:hover{           
-                            color: aquamarine;
-                            border-bottom: 3px solid lightblue;
+                            color: rgb(85, 191, 226);
+                            border-bottom: 3px solid rgb(85, 191, 226);
                         }
                     }
                 }
             }
         }
     }
-
-    
-
 </style>
